@@ -27,9 +27,16 @@
   #apes {
  	color:#D98723;
   }
-		#iframe {
-    background-color: #FFB6ED;			
-		}
+	.flower {
+  background-image: url("flower.jpg");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 226px;
+  height: 200px;
+  z-index: 1;
+}
+
 	</style>	
 </head>
 <body>
@@ -41,13 +48,28 @@
   	<li class="nav-item"><a class="nav-link" href="index.html" id="title">flores et apes</a></li>
 	  <li class="nav-item"><a class="nav-link" href="apes.html" id="apes">🐝 apes</a></li></div>
 
-  	</ul>
-	</nav></div>
+  </ul>
+</nav></div>
 	<br>
-	<center><div class="container-fluid">
-	<iframe width="200" height="200" id="iframe"></iframe><iframe width="200" height="200" id="iframe"></iframe><iframe width="200" height="200" id="iframe"></iframe><iframe width="200" height="200" id="iframe"></iframe><iframe width="200" height="200" id="iframe"></iframe>
-	
-	</div></center>
+	<center>
+	   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+ <img src="flowerhover.jpg" width="226" height="200" alt="video"/></button>
+         <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/SZrTndD1H10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+	</center>
 	
 	</body>
 </html>
