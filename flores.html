@@ -15,29 +15,34 @@
   	color:#253237;
 	font-family: t26-carbon , monospace;
   }
-  #title {
+#flores {
+  	color:#A28F9D;
+        }  
+        #title {
 	color:#16262E;
   	font-size:40px;
 	
   }
-  #flores {
-  	color:#A28F9D;
-	text-decoration: strong;
-  }
+        #learn {
+            
+        }
+        
+    
   #apes {
  	color:#D98723;
   }
-	.flower {
-  background-image: url("flower.jpg");
+	.flower:hover {
+  background-image: url("flowerhover.jpg");
   position: absolute;
   left: 0px;
   top: 0px;
   width: 226px;
   height: 200px;
   z-index: 1;
+        
+        
 }
-
-	</style>	
+    </style>	
 </head>
 <body>
 <br>
@@ -53,7 +58,7 @@
 	<center>
         Click on an image for more info.<br><br>
 	   <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
- <img src="flowerhover.jpg" width="200" height="200" alt="video"/></button>
+ <img src="flower.jpg" alt="video" id="flower"/></button>
          <!-- The Modal -->
   <div class="modal" id="myModal">
     <div class="modal-dialog modal-lg">
@@ -68,12 +73,12 @@
         <div class="modal-body">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/SZrTndD1H10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        </div>
       </div>
-        </div>
-           <a href="https://www.sciencedaily.com/terms/flower.htm#targetText=A%20flower%2C%20also%20known%20as,to%20produce%20seeds%20through%20reproduction.&targetText=After%20fertilization%2C%20portions%20of%20the,a%20fruit%20containing%20the%20seeds." target="_blank"><img src="sciencedaily.png" width="" height="200" alt="website" class="img-fluid"/></a>
+    </div>
+      </div>
+           <a href="https://www.sciencedaily.com/terms/flower.htm#targetText=A%20flower%2C%20also%20known%20as,to%20produce%20seeds%20through%20reproduction.&targetText=After%20fertilization%2C%20portions%20of%20the,a%20fruit%20containing%20the%20seeds." target="_blank"><img src="sciencedaily.jpg"  alt="website" class="img-fluid"/></a>
 	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
- <img src="bloom.png" width="200" height="200" alt="video"/></button>
+ <img src="bloom.jpg" alt="video"/></button>
          <!-- The Modal -->
   <div class="modal" id="myModal">
     <div class="modal-dialog modal-lg">
@@ -88,12 +93,12 @@
         <div class="modal-body">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/LjCzPp-MK48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        </div>
       </div>
-        </div>
+    </div>
+      </div>
         
         
         
-        </center>
+</center>
 	</body>
 </html>
