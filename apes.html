@@ -28,8 +28,21 @@
 #iframe {
 		background-color: #DDB800;	  
 			  
-		  }	  
-		  
+		  }
+  .image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+  }
+
+
+  .container:hover .image {
+      opacity: 0.3;
+  }
+
 	</style>
 </head>
 <body>
@@ -46,7 +59,7 @@
 <center>
         Click on an image for more info.<br><br>
        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#deadbee">
- <img src="beesdie.jpg"  alt="video"/></button>
+           <div class="container"><img src="beesdie.jpg"  alt="video" class="image"/></div></button>
          <!-- The Modal -->
   <div class="modal" id="deadbee">
     <div class="modal-dialog modal-lg">
@@ -65,11 +78,12 @@
         </div>
       </div>
         </div>
-    <a href="https://blogs.scientificamerican.com/not-bad-science/bees-learn-which-flowers-have-pollen/" target="_blank"><img src="learn.jpg" alt="website" class="img-fluid"/></a>
+    <a href="https://blogs.scientificamerican.com/not-bad-science/bees-learn-which-flowers-have-pollen/" target="_blank">
+        <img src="learn.jpg" alt="website" class="img-fluid"/></a>
     
          
 	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#bee">
- <img src="bee.jpg " alt="video"/></button>
+        <div class="container"><img src="bee.png" alt="video" class="image"/></div></button>
          <!-- The Modal -->
   <div class="modal" id="bee">
     <div class="modal-dialog modal-lg">
@@ -79,7 +93,7 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-        
+
         <!-- Modal body -->
         <div class="modal-body">
          
